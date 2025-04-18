@@ -12,7 +12,7 @@ export class ProblemScheduler {
     private discordService: DiscordService,
   ) {}
 
-  @Cron(CronExpression.EVERY_DAY_AT_10AM) // You can adjust this to your preferred time
+  @Cron(CronExpression.EVERY_MINUTE) // You can adjust this to your preferred time
   async handleDailyProblemPost() {
     this.logger.log('Executing scheduled job to post daily problem');
 
