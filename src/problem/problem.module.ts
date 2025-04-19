@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { ProblemService } from './problem.service';
 import { DiscordService } from './discord.service';
 import { ProblemScheduler } from './problem.scheduler';
+import { GoogleSheetsService } from './google-sheets.service';
 
 @Module({
-  providers: [ProblemService, DiscordService, ProblemScheduler],
+  providers: [DiscordService, GoogleSheetsService, ProblemScheduler],
 })
 export class ProblemModule {}

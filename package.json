@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-  "node": ">=20"
-},
+    "node": ">=20"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -30,6 +30,7 @@
     "@nestjs/schedule": "^5.0.1",
     "discord.js": "^14.18.0",
     "fs-extra": "^11.3.0",
+    "googleapis": "^148.0.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
