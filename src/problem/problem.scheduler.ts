@@ -13,7 +13,7 @@ export class ProblemScheduler {
   ) {}
 
 
- @Cron(CronExpression.EVERY_DAY_AT_2AM)
+ @Cron(CronExpression.EVERY_5_MINUTES)
  async handleDailyProblemPostFromSheet() {
   this.logger.log('Executing scheduled job to post daily problem from Google Sheets');
 
