@@ -58,9 +58,7 @@ export class DiscordService implements OnModuleInit {
         return false;
       }
 
-      // const message = `📝 **Daily Problem Challenge** 📝\n\nHere's today's problem to solve:\n${problemLink}\n\nHappy coding! Share your solutions in the thread.`;
-      const message = `Hello from lazybot, This is my test run before taking the responsibility to post handpicked daily problems from lazymentors.`;
-
+      const message = `📝 **Daily Problem Challenge** 📝\n\nHere's today's problem to solve:\n${problemLink}\n\nHappy coding! Share your solutions in the thread.`;
 
       await channel.send(message);
       this.logger.log(
